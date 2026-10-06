@@ -19,13 +19,12 @@ La comunicación entre Apache/PHP y MariaDB se realiza mediante una red interna 
 
 1.2. Diagrama de arquitectura en Mermaid:
 
-```mermaid
+
 graph LR N[Navegador] -->|HTTP :8080| W[Apache + PHP 8.3]
 W -->|arcade_net| B[(MariaDB 11.4)]
 W --> J[JavaScript en navegador]
 N --> J
 B --> V[(Volumen Docker)]
-```
 
 
 1.3. Comandos de despliegue:
